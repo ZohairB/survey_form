@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Anime Survey Form</title>
+</head>
+<body>
+    <header>
+        <h1 id="title">Anime Survey Form</h1>
+        <p id="description">Thank you for taking the time to give your opinion about anime</p>
+    </header>
+    <div>
+        <form id="survey-form">
+            <div>
+                <label for="name" id="name-label">Name:</label><br>
+                <input type="text" placeholder="Enter your name" id="name" name="name">
+            </div>
+            <div>
+                <label for="email" id="email-label">Email:</label><br>
+                <input type="email" placeholder="Enter your email" id="email" name="email">
+            </div>
+            <div>
+                <label for="number" id="number-label">Age (optional):</label><br>
+                <input type="number" placeholder="Age" id="number" name="number" min="10" max="100">
+            </div>
+            <div>
+                <label for="otaku">Which option best describes you as an anime fan?</label><br>
+                <select name="otaku" id="otaku">
+                    <option value="" disabled selected hidden>Select description</option>
+                    <option>Newbie</option>
+                    <option>Anime Otaku</option>
+                    <option>Anime Hikikomori</option>
+                    <option>Weeaboo</option>
+                    <option>Waifu Fan</option>
+                    <option>Nijikon</option>
+                    <option>Bandwagon</option>
+                </select> 
+            </div>
+            <div>
+                <p>Would you recomand anime to a friend?</p>
+                <input type="radio" id="Definitely" name="anime" value="Definitely" checked>
+                <label for="Definitely">Definitely</label><br>
+                <input type="radio" id="Maybe" name="anime" value="Maybe">
+                <label for="Maybe">Maybe</label><br>
+                <input type="radio" id="Not sure" name="anime" value="Not sure">
+                <label for="Not sure">Not sure</label> 
+            </div>
+            <div>
+                <p>what do you like about anime?</p>
+                <input type="checkbox" id="cancel" value="cancel">
+                <label for="cancel">It’s rarely cancelled</label><br>
+                <input type="checkbox" value="interesting" id="interesting">
+                <label for="interesting">The characters are unique and interesting</label><br>
+                <input type="checkbox" value="Characters" id="Characters">
+                <label for="Characters">Characters have flaws and die</label><br>
+                <input type="checkbox" value="relatable" id="relatable">
+                <label for="relatable">Anime is relatable</label><br>
+                <input type="checkbox" value="possibilities" id="possibilities">
+                <label for="possibilities">There are ENDLESS possibilities</label><br>
+                <input type="checkbox" value="culture" id="culture">
+                <label for="culture">It teaches you about Japanese culture</label><br>
+                <input type="checkbox" value="female" id="female">
+                <label for="female">Strong female characters</label><br>
+                <input type="checkbox" value="action" id="action">
+                <label for="action">Amazing action sequences</label><br>
+                <input type="checkbox" value="binge" id="binge">
+                <label for="binge">It’s super easy to binge</label><br>
+                <input type="checkbox" value="entertaining" id="entertaining">
+                <label for="entertaining">It’s entertaining</label><br>
+            </div>
+            <div>
+                <label for="review">Any comments or suggestions?</label><br>
+                <textarea id="review" name="review" rows="4" cols="50" placeholder="Write your comment here..."></textarea> 
+            </div>
+        </form>
+    </div>
+</body>
+</html>

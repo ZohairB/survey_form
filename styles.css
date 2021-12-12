@@ -1,0 +1,6 @@
+html {
+  min-height: 100%;
+  background: url("./pictures/wallpaper.jpg");
+  background-size: cover;
+  box-shadow: inset 0 0 0 2000px #442576(255, 0, 150, 0.5);
+}
